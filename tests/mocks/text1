@@ -1,0 +1,22 @@
+hkubectl [command]
+
+Commands:
+  hkubectl exec <command>       Execution pipelines as raw or stored
+  hkubectl algorithm <command>  Manage loaded algorithms
+  hkubectl pipeline <command>   Manage loaded algorithms
+  hkubectl dry-run <command>    run pipeline locolly for debugging
+  hkubectl sync <command>       sync local source folder into algorithm
+                                container in the cluster
+  hkubectl config [command]     Set configuration options for hkubectl
+  hkubectl completion           generate completion script
+
+Options:
+  --version             Show version number                            [boolean]
+  --rejectUnauthorized  set to false to ignore certificate signing errors.
+                        Useful for self signed TLS certificate         [boolean]
+  --endpoint            url of hkube api endpoint                       [string]
+  --verbose             verbose logging                                [boolean]
+  --json, -j            output json to stdout                          [boolean]
+  --help                Show help                                      [boolean]
+
+for more information visit http://hkube.io

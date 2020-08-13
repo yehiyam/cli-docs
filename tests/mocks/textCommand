@@ -1,0 +1,24 @@
+hkubectl exec <command>
+
+Execution pipelines as raw or stored
+
+Commands:
+  hkubectl exec get [name]             Gets an pipeline by name
+  hkubectl exec raw [name]             execute pipeline by name
+  hkubectl exec stored [name]          execute pipeline by name
+  hkubectl exec stop <jobId> [reason]  call to stop pipeline execution
+  hkubectl exec status <jobId>         Returns a status for the current pipeline
+  hkubectl exec result <jobId>         returns result for the execution of a
+                                       specific pipeline run
+  hkubectl exec algorithm [name]       execute algorithm
+
+Options:
+  --version             Show version number                            [boolean]
+  --rejectUnauthorized  set to false to ignore certificate signing errors.
+                        Useful for self signed TLS certificate
+                                                     [boolean] [default: "true"]
+  --endpoint, -e        url of hkube api endpoint
+                        [string] [default: "http://127.0.0.1/hkube/api-server/"]
+  --verbose             verbose logging                                [boolean]
+  --json, -j            output json to stdout                          [boolean]
+  --help                Show help                                      [boolean]

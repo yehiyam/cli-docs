@@ -1,0 +1,12 @@
+hkubectl algorithm list
+
+Lists all registered algorithms
+
+Options:
+  --version             Show version number                            [boolean]
+  --rejectUnauthorized  set to false to ignore certificate signing errors.
+                        Useful for self signed TLS certificate         [boolean]
+  --endpoint            url of hkube api endpoint                       [string]
+  --verbose             verbose logging                                [boolean]
+  --json, -j            output json to stdout                          [boolean]
+  --help                Show help                                      [boolean]

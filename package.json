@@ -20,6 +20,7 @@
     "mocha": "^8.1.1"
   },
   "dependencies": {
+    "string.prototype.matchall": "^4.0.2",
     "yargs": "^15.4.1"
   },
   "husky": {

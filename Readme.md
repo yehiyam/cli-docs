@@ -1,15 +1,15 @@
-# cli-docs  
+# cli-md-docs  
 Tool for creating markdown Readme documentation for cli tools created with
 [yargs](https://github.com/yargs/yargs)  
 ## Install  
 ```shell  
-npm i -g cli-docs  
+npm i -g cli-md-docs  
 ```  
 ## Usage  
-## cli-docs  
+## cli-md-docs  
 ---  
 ```shell  
-$ cli-docs   
+$ cli-md-docs   
 ```  
 Tool for creating markdown Readme documentation for cli tools created with
 [yargs](https://github.com/yargs/yargs)    

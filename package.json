@@ -27,5 +27,13 @@
     "hooks": {
       "pre-commit": "npm run pre-commit"
     }
-  }
+  },
+  "keywords": [
+    "cli",
+    "markdown",
+    "md",
+    "docs",
+    "documentations",
+    "yargs"
+  ]
 }

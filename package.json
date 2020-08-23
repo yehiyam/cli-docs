@@ -2,7 +2,8 @@
   "name": "cli-docs",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "cli-docs",
+  "bin": "cli-docs",
   "scripts": {
     "lint": "./node_modules/eslint/bin/eslint.js .",
     "pre-commit": "npm run lint && npm t",

@@ -91,6 +91,12 @@ describe('find tests', () => {
             expect(options).to.exist;
             expect(options).to.have.lengthOf(9);
         });
+        it('get options with positional', () => {
+            const helpString = fs.readFileSync(`${__dirname}/mocks/textWithPositional`, 'utf-8');
+            const options = parseOptions(helpString);
+            expect(options).to.exist;
+            expect(options).to.have.lengthOf(7);
+        });
     });
     describe('recursive tests', () => {
         it('class', async () => {

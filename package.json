@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "lint": "./node_modules/eslint/bin/eslint.js .",
+    "pre-commit": "npm run lint && npm t",
     "test": "node_modules/mocha/bin/mocha tests --colors --recursive --exit"
   },
   "author": "",
@@ -11,5 +13,11 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^8.1.1"
+  },
+  "dependencies": {
+    "eslint": "^7.7.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "yargs": "^15.4.1"
   }
 }

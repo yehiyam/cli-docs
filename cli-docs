@@ -1,6 +1,3 @@
 #!/usr/bin/env node
-const main = async ()=>{
-
-};
-
-main();
+const cli = require('./lib/cli-docs');
+cli();

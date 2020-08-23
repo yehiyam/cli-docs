@@ -1,0 +1,33 @@
+hkubectl algorithm apply [name]
+
+apply an algorithm
+
+Commands:
+  hkubectl algorithm apply completion  generate completion script
+
+Options:
+  --version                       Show version number                  [boolean]
+  --rejectUnauthorized            set to false to ignore certificate signing
+                                  errors. Useful for self signed TLS certificate
+                                                                       [boolean]
+  --endpoint                      url of hkube api endpoint             [string]
+  --verbose                       verbose logging                      [boolean]
+  --json, -j                      output json to stdout                [boolean]
+  --help                          Show help                            [boolean]
+  --file, -f                      the algorithm file                    [string]
+  --env                           the algorithm env
+                                  [string] [choices: "python", "nodejs", "java"]
+  --codePath                      the code path for the algorithm       [string]
+  --codeEntryPoint, --entryPoint  the code entry point for the algorithm[string]
+  --cpu                           CPU requirements of the algorithm in cores
+                                                                        [number]
+  --gpu                           GPU requirements of the algorithm in cores
+                                                                        [number]
+  --mem                           memory requirements of the algorithm. Possible
+                                  units are ['Ki', 'M', 'Mi', 'Gi', 'm', 'K',
+                                  'G', 'T', 'Ti', 'P', 'Pi', 'E', 'Ei']. Minimum
+                                  is 4Mi                                [string]
+  --noWait                        if true, does not wait for the build to finish
+                                                      [boolean] [default: false]
+  --setCurrent                    if true, sets the new version as the current
+                                  version             [boolean] [default: false]    

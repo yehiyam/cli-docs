@@ -1,0 +1,20 @@
+hkubectl exec raw
+
+execute raw pipeline from file
+
+Options:
+  --version             Show version number                            [boolean]
+  --rejectUnauthorized  set to false to ignore certificate signing errors.
+                        Useful for self signed TLS certificate
+                                                     [boolean] [default: "true"]
+  --endpoint, -e        url of hkube api endpoint
+                        [string] [default: "http://127.0.0.1/hkube/api-server/"]
+  --verbose             verbose logging                                [boolean]
+  --json, -j            output json to stdout                          [boolean]
+  --help                Show help                                      [boolean]
+  --file, -f            file path/name for running pipeline.
+                        use - to read from stdin             [string] [required]
+  --noWait              if true, does not wait for the execution to finish
+                                                      [boolean] [default: false]
+  --noResult            if true, does not show the result of the execution
+                                                      [boolean] [default: false]

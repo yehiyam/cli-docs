@@ -1,0 +1,14 @@
+hkubectl exec get <name>
+
+Gets an pipeline by name
+
+Options:
+  --version             Show version number                            [boolean]
+  --rejectUnauthorized  set to false to ignore certificate signing errors.
+                        Useful for self signed TLS certificate
+                                                     [boolean] [default: "true"]
+  --endpoint, -e        url of hkube api endpoint
+                        [string] [default: "http://127.0.0.1/hkube/api-server/"]
+  --verbose             verbose logging                                [boolean]
+  --json, -j            output json to stdout                          [boolean]
+  --help                Show help                                      [boolean]

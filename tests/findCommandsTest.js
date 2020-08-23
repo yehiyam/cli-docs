@@ -1,7 +1,7 @@
 const { expect } = require('chai');
 const fs = require('fs');
-const { parseCommands, parseDescription,parseArgs, findCommandsRecursive } = require('../lib/findCommands');
-const createCommand = require('../lib/command');
+const { parseCommands, parseDescription,parseArgs, findCommandsRecursive } = require('../lib/yargs/findCommands');
+const createCommand = require('../lib/yargs/command');
 const { exec } = require('child_process');
 describe('find tests', () => {
 
@@ -67,6 +67,13 @@ describe('find tests', () => {
             expect(res[0].name).to.eql('name')
             expect(res[0].optional).to.eql(false)
         });
+        it('parse one optional arg', () => {
+            const helpString = fs.readFileSync(__dirname + '/mocks/textNoCommandArgOptional', 'utf-8');
+            const res = parseArgs('hkubectl', helpString,'exec get');
+            expect(res).to.have.lengthOf(1)
+            expect(res[0].name).to.eql('name')
+            expect(res[0].optional).to.eql(true)
+        });
         it('parse no arg', () => {
             const helpString = fs.readFileSync(__dirname + '/mocks/textNoCommand', 'utf-8');
             const res = parseArgs('hkubectl', helpString,'exec get');
@@ -74,10 +81,6 @@ describe('find tests', () => {
         });
     });
     describe('recursive tests', () => {
-        // it('simple', async () => {
-        //     const res = await findCommandsRecursive('hkubectl', `${__dirname}/mocks/hkubectl`)
-        //     expect(res).to.not.be.empty
-        // }).timeout(15000);
         it('class', async () => {
             const command = await createCommand('root', 'hkubectl', `${__dirname}/mocks/hkubectl`)
             expect(command).to.exist

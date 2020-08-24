@@ -1,6 +1,6 @@
 {
   "name": "cli-md-docs",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "cli-md-docs",
   "bin": "cli-md-docs",

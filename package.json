@@ -1,9 +1,11 @@
 {
   "name": "cli-md-docs",
   "version": "1.0.4",
-  "description": "",
+  "description": "Tool for creating markdown Readme documentation for cli tools created with [yargs](https://github.com/yargs/yargs)   ## Install   ```shell   npm i -g cli-md-docs   ```   ## Usage   ## cli-md-docs   ---   ```shell   $ cli-md-docs    ```   Tool for creating markdown Readme documentation for cli tools created with [yargs](https://github.com/yargs/yargs)     Options:",
   "main": "cli-md-docs",
-  "bin": "cli-md-docs",
+  "bin": {
+    "cli-md-docs": "cli-md-docs"
+  },
   "scripts": {
     "lint": "./node_modules/eslint/bin/eslint.js .",
     "pre-commit": "npm run lint && npm t",
@@ -35,5 +37,17 @@
     "docs",
     "documentations",
     "yargs"
-  ]
+  ],
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yehiyam/cli-docs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yehiyam/cli-docs/issues"
+  },
+  "homepage": "https://github.com/yehiyam/cli-docs#readme"
 }

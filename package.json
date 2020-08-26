@@ -1,6 +1,6 @@
 {
   "name": "cli-md-docs",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Tool for creating markdown Readme documentation for cli tools created with [yargs](https://github.com/yargs/yargs)   ## Install   ```shell   npm i -g cli-md-docs   ```   ## Usage   ## cli-md-docs   ---   ```shell   $ cli-md-docs    ```   Tool for creating markdown Readme documentation for cli tools created with [yargs](https://github.com/yargs/yargs)     Options:",
   "main": "cli-md-docs",
   "bin": {
